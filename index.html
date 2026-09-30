@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Aya Saouli | Web & Mobile Developer</title>
+  <meta name="description" content="Aya Saouli is a Web and Mobile Developer specializing in modern, responsive and accessible web applications, mobile apps and full-stack development.">
+  <meta name="author" content="Aya Saouli">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#071a24">
+  <meta name="keywords" content="Aya Saouli, Web Developer, Mobile Developer, Full Stack Developer, React, Next.js, Django, Flutter, Python, Java, PostgreSQL, MongoDB">
+
+  <link rel="canonical" href="https://ayasaouli-onrender.com/">
+  <link rel="alternate" hreflang="en" href="https://ayasaouli-onrender.com/">
+  <link rel="alternate" hreflang="fr" href="https://ayasaouli-onrender.com/?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://ayasaouli-onrender.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ayasaouli-onrender.com/">
+  <meta property="og:title" content="Aya Saouli | Web & Mobile Developer">
+  <meta property="og:description" content="Portfolio of Aya Saouli — Web and Mobile Developer focused on modern, responsive and accessible applications.">
+  <meta property="og:image" content="https://ayasaouli-onrender.com/images/aya.png">
+  <meta property="og:image:alt" content="Aya Saouli — Web and Mobile Developer">
+  <meta property="og:site_name" content="Aya Saouli Portfolio">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aya Saouli | Web & Mobile Developer">
+  <meta name="twitter:description" content="Portfolio of Aya Saouli — Web and Mobile Developer.">
+  <meta name="twitter:image" content="https://ayasaouli-onrender.com/images/aya.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aya Saouli",
+    "url": "https://ayasaouli-onrender.com/",
+    "jobTitle": "Web and Mobile Developer",
+    "sameAs": [
+      "https://github.com/saouliaya",
+      "https://www.linkedin.com/in/aya-saouli-36179a344/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a data-i18t="skip to content" class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand-logo">
+        <a href="#home" aria-label="Aya Saouli home"><img src="images/logo.png" alt="Aya Saouli Logo" width="40" height="40"></a>
+        <a class="brand" href="#home" aria-label="Aya Saouli home">Aya Saouli</a>
+      </div>
+      <nav aria-label="Main navigation">
+        <div class="nav-links" id="desktopNav">
+          <a data-i18t="home" href="#home">Home</a>
+          <a data-i18t="about" href="#about">About</a>
+          <a data-i18t="skills" href="#skills">Skills</a>
+          <a data-i18t="projects" href="#projects">Projects</a>
+          <a data-i18t="certificates" href="#certificates">Certificates</a>
+          <a data-i18t="contact" href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">FR</button>
+        <button id="mode-toggle" class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode">🌞</button>
+        <button id="hamburgerBtn" class="hamburger" type="button" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <div class="mobile-panel-top">
+      <a class="brand" href="#home">Aya Saouli</a>
+      <button class="modal-close" id="closeMobileBtn" type="button" aria-label="Close menu">✕</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a data-i18t="home" href="#home">Home</a>
+      <a data-i18t="about" href="#about">About</a>
+      <a data-i18t="skills" href="#skills">Skills</a>
+      <a data-i18t="projects" href="#projects">Projects</a>
+      <a data-i18t="certificates" href="#certificates">Certificates</a>
+      <a data-i18t="contact" href="#contact">Contact</a>
+    </nav>
+    <button class="language-toggle mobile-language-toggle" id="mobileLanguageToggle" type="button">FR</button>
+  </div>
+
+  <main id="main-content" class="container">
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-left card fade-in">
+        <p data-i18t="hello_im" class="eyebrow">Hello — I'm</p>
+        <h1 id="hero-heading">Aya Saouli</h1>
+        <div class="typing" id="type-target" aria-live="polite"></div>
+        <p data-i18t="hero_desc" class="hero-description">
+          I build modern web and mobile applications with performance, accessibility and clean user experiences in mind.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" data-i18t="View projects" href="#projects">View projects</a>
+          <a class="secondary-btn" data-i18t="Contact me" href="#contact">Contact me</a>
+        </div>
+
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/saouliaya" class="social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:YOUR_EMAIL@example.com" class="social" aria-label="Email Aya Saouli">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aya-saouli-36179a344/" class="social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://wa.me/+213549136546" class="social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="cv.pdf" class="social cv-link" target="_blank" rel="noopener noreferrer" aria-label="CV">
+            <span class="cv-text">CV</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in">
+        <div class="avatar">
+          <img src="images/aya.png" alt="Portrait of Aya Saouli" width="400" height="400" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section fade-in" aria-labelledby="about-heading">
+      <div class="section-heading">
+        <p data-i18t="profile"class="section-kicker">Profile</p>
+        <h2 data-i18t="about me" id="about-heading">About me</h2>
+      </div>
+      <div class="card about">
+        <div class="text">
+          <p data-i18t="about_me_desc">
+            Hello — I'm Aya, a Web and Mobile Developer passionate about creating responsive,
+            accessible and performant applications. I work across front-end and back-end development
+            and enjoy turning ideas into polished products.
+          </p>
+          <ul class="feature-list">
+            <li data-i18t="focused_on_clean_code">Focused on clean code, maintainable architecture and reliable user experiences.</li>
+            <li data-i18t="interested_in_ux">Interested in UX, animations, developer tooling and modern application development.</li>
+            <li data-i18t="open_to_collaboration">Open to collaboration, freelance projects and professional opportunities.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section fade-in" aria-labelledby="skills-heading">
+      <div class="section-heading">
+        <p data-i18t="toolkit" class="section-kicker">Toolkit</p>
+        <h2 data-i18t="skills" id="skills-heading">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill" tabindex="0"><div class="skill-icon">H</div><span>HTML</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">C</div><span>CSS</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">JS</div><span>JavaScript</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">T</div><span>Tailwind CSS</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">N</div><span>Next.js</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">D</div><span>Django</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">R</div><span>React</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">F</div><span>Flutter</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">Py</div><span>Python</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">J</div><span>Java</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">PG</div><span>PostgreSQL</span></div>
+        <div class="skill" tabindex="0"><div class="skill-icon">M</div><span>MongoDB</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <span data-i18t="selected_work" class="eyebrow">SELECTED WORK</span>
+        <h2 data-i18t="projects" id="projects-heading">Projects</h2>
+      </div>
+
+      <div class="projects-carousel">
+
+        <button
+          class="project-nav project-prev"
+          id="projectPrev"
+          type="button"
+          aria-label="Previous project">
+          ‹
+        </button>
+
+        <div class="projects-viewport">
+          <div class="projects-track" id="projectsTrack">
+
+            <!-- Project 1 -->
+            <a
+              class="project"
+              href="movie/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Movies Bot project">
+
+              <div class="project-image">
+                <img
+                  src="images/movie.png"
+                  alt="Movies Bot project preview"
+                  loading="lazy"
+                  width="600"
+                  height="360">
+              </div>
+
+              <div class="meta">
+                <strong data-i18t="movies_bot">🎬 Movies Bot</strong>
+                <span data-i18t="chatbot_to_search_movie_data_and_recommendations">Chatbot to search movie data and recommendations.</span>
+              </div>
+            </a>
+
+
+            <!-- Project 2 -->
+            <a
+              class="project"
+              href="recipe.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Receipt Management project">
+
+              <div class="project-image">
+                <img
+                  src="images/recipe.png"
+                  alt="Receipt Management project preview"
+                  loading="lazy"
+                  width="600"
+                  height="360">
+              </div>
+
+              <div class="meta">
+                <strong data-i18t="receipt_management">📜 Receipt Management</strong>
+                <span data-i18t="tool_to_manage_receipts_and_generate_reports">Tool to manage receipts and generate reports.</span>
+              </div>
+            </a>
+
+
+            <!-- Project 3 -->
+            <a
+              class="project"
+              href="https://www.figma.com/make/shb8KeMPPJKSkb6LqEU4ab/Stock-Management-Web-Platform?node-id=0-1&p=f&fullscreen=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Stock Manager design">
+
+              <div class="project-image">
+                <img
+                  src="images/stock.png"
+                  alt="Stock Manager project preview"
+                  loading="lazy"
+                  width="600"
+                  height="360">
+              </div>
+
+              <div class="meta">
+                <strong data-i18t="stock_manager">📦 Stock Manager</strong>
+                <span data-i18t="inventory_and_stock_management_platform">Inventory and stock management platform.</span>
+              </div>
+            </a>
+            <!-- Project 4 -->
+            <a
+              class="project"
+              href="https://nodaplast-film.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open NodaPlastFilm company website">
+
+              <div class="project-image">
+                <img
+                  src="images/noda.png"
+                  alt="NodaPlastFilm company website preview"
+                  loading="lazy"
+                  width="600"
+                  height="360">
+              </div>
+
+              <div class="meta">
+                <strong data-i18t="noda_plast_film_company_website">📦 NodaPlastFilm company website</strong>
+                <span data-i18t="company_website_for_noda_plast_film">Company website for NodaPlastFilm.</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <button
+          class="project-nav project-next"
+          id="projectNext"
+          type="button"
+          aria-label="Next project">
+          ›
+        </button>
+
+      </div>
+
+      <div class="project-dots" id="projectDots"></div>
+    </section>
+
+    <section id="certificates" class="section fade-in" aria-labelledby="certificates-heading">
+      <div class="section-heading">
+        <p data-i18t="achievements" class="section-kicker">Achievements</p>
+        <h2 data-i18t="certificates" id="certificates-heading">Certificates</h2>
+      </div>
+
+      <div class="certificates-carousel" aria-label="Certificates carousel">
+        <button class="carousel-nav left" id="prevSlide" type="button" aria-label="Previous certificate">❮</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="certificateTrack">
+
+            <a href="certificates/certificat (1).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer1.png" alt="Certificate 1" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (2).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer2.png" alt="Certificate 2" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (3).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer3.png" alt="Certificate 3" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (4).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer4.jpg" alt="Certificate 4" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (5).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer5.jpg" alt="Certificate 5" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (6).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer6.jpg" alt="Certificate 6" loading="lazy" width="600" height="360">
+            </a>
+
+            <a href="certificates/certificat (7).pdf" target="_blank" class="certificate-preview">
+              <img src="certificates/cer7.jpg" alt="Certificate 7" loading="lazy" width="600" height="360">
+            </a>
+
+          </div>
+        </div>
+        <button class="carousel-nav right" id="nextSlide" type="button" aria-label="Next certificate">❯</button>
+      </div>
+      <div class="carousel-dots" id="dots" aria-label="Certificate navigation"></div>
+    </section>
+
+    <section id="contact" class="section fade-in" aria-labelledby="contact-heading">
+      <div class="section-heading">
+        <p data-i18t="let's_connect" class="section-kicker">Let's connect</p>
+        <h2 data-i18t="contact" id="contact-heading">Contact</h2>
+      </div>
+
+      <div class="card contact-grid">
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label data-i18t="name" for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required placeholder="Your name">
+          </div>
+
+          <div class="field">
+            <label data-i18t="email" for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com">
+          </div>
+
+          <div class="field">
+            <label data-i18t="message" for="message">Message</label>
+            <textarea id="message" name="message" rows="7" maxlength="5000" required placeholder="Write your message..."></textarea>
+          </div>
+
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-actions">
+            <button data-i18t="send_message" type="submit" class="primary-btn" id="send-button">Send message</button>
+            <div id="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3 data-i18t="let's_talk">Let's talk</h3>
+          <p data-i18t="if_you_have_a_project_opportunity_or_question_send_me_a_message_and_i'll_get_back_to_you">If you have a project, opportunity or question, send me a message and I'll get back to you.</p>
+          <a href="mailto:ayasaouli3@gmail.com" class="contact-link">
+            <i class="fa-regular fa-envelope"></i>
+            <span>ayasaouli3@gmail.com</span>
+          </a>
+          <div class="socials">
+            <a href="https://github.com/saouliaya" class="social" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/213797191657" class="social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/aya.saouli.1650" class="social" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/aya-saouli-36179a344/" class="social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Aya Saouli</strong>
+        <p>Web & Mobile Developer</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/saouliaya" class="social" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/213797191657" class="social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/aya.saouli.1650" class="social" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/aya-saouli-36179a344/" class="social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p data-i18t="copyright" class="copyright">© <span id="year"></span> Aya Saouli. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js" defer></script>
+  <script src="translation.js" defer></script>
+</body>
+</html>
