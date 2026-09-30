@@ -20,10 +20,22 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname), {
-  extensions: ["html"],
-  index: "index.html"
-}));
+const express = require("express");
+const path = require("path");
+
+app.use(express.json());
+
+// Serve your website files
+app.use(express.static(path.join(__dirname)));
+
+// Homepage
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 function getTransporter() {
   if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
