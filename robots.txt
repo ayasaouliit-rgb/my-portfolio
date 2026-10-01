@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ayasaouli-onrender.com/sitemap.xml
+Sitemap: https://ayasaouli-portfolio.onrender.com/sitemap.xml
