@@ -20,6 +20,21 @@ app.use((req, res, next) => {
   next();
 });
 
+// Explicitly serve robots.txt so crawlers always receive the correct
+// robots file instead of the website HTML/fallback page.
+app.get("/robots.txt", (_req, res) => {
+  res.type("text/plain; charset=utf-8");
+  res.setHeader("Cache-Control", "public, max-age=3600");
+  res.sendFile(path.join(__dirname, "robots.txt"));
+});
+
+// Explicitly serve sitemap.xml so Google can retrieve it as XML.
+app.get("/sitemap.xml", (_req, res) => {
+  res.type("application/xml; charset=utf-8");
+  res.setHeader("Cache-Control", "public, max-age=3600");
+  res.sendFile(path.join(__dirname, "sitemap.xml"));
+});
+
 app.use(express.static(path.join(__dirname), {
   extensions: ["html"],
   index: "index.html"
