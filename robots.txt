@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Disallow: /api/
+
 Sitemap: https://ayasaouli-portfolio.onrender.com/sitemap.xml
